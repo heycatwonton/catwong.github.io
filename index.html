@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>**YCatherine Wong**</title>
+    <title>Catherine Wong</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("dark-theme");
+        }
+    </script>
 </head>
 <body>
+<header class="header">
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is a basic webpage example.</p>
+        <img class="profile-img" src="profile.jpg" alt="Catherine Wong">
+        <h1>Catherine Wong</h1>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/heycatwonton"><img src="github.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/catcodes"><img src="linkedin.png"></a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+<button onclick="toggleTheme()">Toggle Dark/Light Theme</button>
+
+<section class="education">
+    <div class="container">
+        <h2>Education</h2>
+        <h3>University of California, Berkeley</h3>
+        <p>Bachelor's Degree in Applied Math in Computer Science - Jan 2021 to Present</p>
+        <p>Bachelor's Degree in Data Science - Jan 2021 to Present</p>
+    </div>
+</section>
+
+<section class="work-experience">
+    <div class="container">
+        <h2>Work Experience</h2>
+        <p>Student Software Engineer at Berkeley Lab - Jan 2021 to Present</p>
+        <p>Software Engineer Internship at Microsoft - May 2020 - August 2020</p>
+    </div>
+</section>
 </body>
 </html>
+
